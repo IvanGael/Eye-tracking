@@ -38,9 +38,9 @@ while True:
                 cv2.circle(frame, eye_center, 2, (0, 0, 255), -1)
                 
                 face_center_x = int(x1) + (int(x2) - int(x1)) // 2
-                if eye_center[0] < face_center_x + 10:
-                    cv2.putText(frame, "Looking left", (-50, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-                elif eye_center[0] > face_center_x + 10:
+                if eye_center[0] < face_center_x:
+                    cv2.putText(frame, "Looking left", (50, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+                elif eye_center[0] > face_center_x:
                     cv2.putText(frame, "Looking right", (50, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
     # Display the resulting frame

@@ -1,1 +1,1 @@
-Track user eye in front of webcam using pre-trained Haar cascade eye detection model and ultralytics yolov5
+Track user eye in front of webcam using pre-trained Haar cascade eye detection model, openCv and ultralytics yolov5
