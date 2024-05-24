@@ -4,6 +4,9 @@ import torch
 # Load the pre-trained Haar cascade for eye detection
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
+# To use local haarcascade_eye.xml file
+# eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+
 # Load the YOLOv5 model (use a pre-trained model)
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
 
